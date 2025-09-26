@@ -1,0 +1,106 @@
+:root{
+  --ink: black;                /* text color */
+  --paper: #b4afab;              /* page background */
+  --space-2: 1rem;         /* spacing scale */
+  font-family: "Goudy Old Style";
+}
+
+.expanding-spacer {
+  flex-grow: 1;
+  max-width: 50%;
+}
+
+body {
+  margin: 0;
+  color: var(--ink);
+  background: var(--paper);
+}
+
+header {
+  display: flex;
+  position: sticky; top: 0;
+  background: var(--paper);
+  background: rgba(255, 255, 255, 0.11);
+  border-bottom: 1px solid rgba(0,0,0,0.12);
+  padding: 0.3rem calc(var(--space-2) * 0.75);
+  margin-bottom: 0rem;
+}
+
+h1 {
+  display: flex;
+  font-size: 2em; 
+  margin: var(--space-1) 0 0; 
+  color: var(--brand-brown); 
+  text-align: left; 
+  min-width: 25%;
+} 
+
+nav {
+  display: flex;
+  gap: var(--space-2);
+  justify-content: center;
+  padding: calc(var(--space-2) * 0.5) 0;
+  font-size: 1.2em;
+  /*width:25%;*/
+}
+
+nav a:hover {
+  background: rgba(0, 0, 0, .12);
+  border-radius: 15pt;
+}
+
+a:link {
+  color: black;
+  text-decoration-color: black;
+}
+
+a:visited{
+  color:maroon;
+  text-decoration-color: red;
+}
+
+img {
+  display: flex;
+  margin: 0;
+  width: 25%;
+}
+
+#search {
+  margin: auto;
+  justify-content: center;
+}
+
+p {
+  margin-left: 1rem;
+  margin-top: 0rem;
+  color: white;
+  padding: 0px;
+  background:#222222;
+  font-size: 1.2rem;
+}
+
+p1 {
+  font-size: 1rem;
+}
+mark  {
+  background-color:none;
+  color:black;
+  font-size: 0.8rem;
+  
+}
+#p-search {
+  background: black;
+}
+
+summary {
+  margin:0.75rem;
+  font-weight:bold;
+  font-size:1.5rem;
+}
+
+ul {list-style:none;
+  
+}
+
+#txt {
+  color: white;
